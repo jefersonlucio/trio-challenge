@@ -1,0 +1,12 @@
+fly.toml
+Dockerfile
+.dockerignore
+.gitignore
+node_modules
+.git
+.vscode
+logs
+docs
+test
+.env.example
+README

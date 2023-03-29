@@ -1,0 +1,11 @@
+Sync contacts with Mailchimp = POST: https://trio-jefersonnlucio.fly.dev/contacts/sync
+Reset list (so you can sync again) = POST: https://trio-jefersonnlucio.fly.dev/list/reset
+
+Video going over the project (implementations, details, motivations, etc) = https://www.youtube.com/watch?v=rwF9fgJeiMg
+
+Documentation = https://tddoc.io/view/212-f3b7fb81c4
+
+PS: The code was completely updated from my local repository on March 29th 2023, even though the challenge itself ended on March 6th.
+There are two main reasons for that, first, I've found I exposed personal data in the code by mistake (I was in a rush..., Ok?), the second reason is the believe I could make the code itself better and my personal wish to keep it in my GIT repository, for a number of reasons. Some improvements were introduced. For instance, I've converted the endpoints from GET to POST, as I say in the video, the original challenge documentation asks for GET endpoints, however, both endpoints change stuff, and they change a lot... It's the main reason for their existence. That does not go well with what we learn about HTTP verbs as we are going through the basics, any student fresh out of college will tell you that a GET endpoint shouldn't alter nor modify anything in your backend.
+I also figured why not get more information into the log files, (some) service-layer continuation of what happens at the routes' level, just to demonstrate that it is possible and how it can be done.
+It used to be a Trio.io challenge, but now I consider it as a personal pet project of mine, and a technology demonstrator, so in the future, you can expect more to be added and/or changed.
